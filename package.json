@@ -1,15 +1,18 @@
 {
   "dependencies": {
+    "discord-player": "^5.2.2",
     "discord.js": "^13.6.0",
     "dotenv": "^16.0.0",
-    "nodemon": "^2.0.15"
+    "ffmpeg": "^0.0.4",
+    "nodemon": "^2.0.15",
+    "opusscript": "^0.0.8"
   },
   "name": "symphony",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
