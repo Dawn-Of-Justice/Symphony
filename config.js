@@ -1,13 +1,17 @@
 module.exports = {
+    app: {
+        px: '.',
+        dtime: '15000'
+    },
 
-opt: {
+    opt: {
 
-    discordPlayer: {
-        ytdlOptions: {
-            quality: 'highestaudio',
-            highWaterMark: 1<<25
+        discordPlayer: {
+            ytdlOptions: {
+                quality: 'highestaudio',
+                highWaterMark: 1<<25
+            }
         }
     }
-}
 
 };
