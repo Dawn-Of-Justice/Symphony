@@ -36,4 +36,4 @@ module.exports = ( client, message ) => {
 
     if (cmd) cmd.execute(client, message, args);
 
-}
+};

@@ -1,6 +1,5 @@
 const { readdirSync } = require( 'fs' );
 const { Collection } = require( 'discord.js' );
-const { dir } = require('console');
 
 client.commands = new Collection();
 
@@ -16,8 +15,8 @@ readdirSync('./commands/').forEach(dirs => {
     const commands = readdirSync(`./commands/${dirs}`).filter(files => files.endsWith('.js'));
 
     for (const file of commands) {
-        const commands = require(`../commands/${dirs}/${file}`);
-        client.commands.set(command.name.toLowerCase(), commands);
+        const command = require(`../commands/${dirs}/${file}`);
+        client.commands.set(command.name.toLowerCase(), command);
         delete require.cache[require.resolve(`../commands/${dirs}/${file}`)];
     };
 });
