@@ -1,7 +1,8 @@
 module.exports = {
     app: {
         px: '.',
-        dtime: '15000'
+        dtime: '7000',
+        dvol: '65'
     },
 
     opt: {
