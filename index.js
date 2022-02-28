@@ -28,4 +28,4 @@ client.on('ready', () => {
 
 
 
-//process.on("uncaughtException", (error) => { console.log(error) })
+process.on("uncaughtException", (error) => { console.log(error) })
