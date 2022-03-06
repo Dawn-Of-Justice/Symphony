@@ -41,7 +41,7 @@ module.exports = {
 
         const success = queue.setVolume(client.config.app.dvol);
 
-        if (!queue.playing) await queue.play().then( success);
+        if (!queue.playing) await queue.play().then( success );
         
 
     }
