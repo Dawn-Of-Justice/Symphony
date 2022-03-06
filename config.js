@@ -2,8 +2,7 @@ module.exports = {
     app: {
         px: '.',
         dtime: '8000',
-        dvol: '65',
-        serverId: '497428249882656769'
+        dvol: '65'
     },
 
     opt: {
