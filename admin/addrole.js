@@ -82,7 +82,7 @@ module.exports = {
         let menu = row.components[0]
         if (menu) {
             for (const o of menu.options) {
-                if (o.value === options[0].value) {
+                if (o.value === option[0].value) {
                     return {
                         custom: true,
                         content: `<@${o.value}> is already part of this menu.`,
