@@ -1,5 +1,7 @@
 const { Player } = require ('discord-player');
 const { Client , Intents } = require ('discord.js');
+const WOKCommands = require('wokcommands')
+const path = require('path')
 const dotenv = require ('dotenv');
 dotenv.config();
 
@@ -8,7 +10,9 @@ global.client = new Client({
         Intents.FLAGS.GUILDS,
         Intents.FLAGS.GUILD_MESSAGES,
         Intents.FLAGS.GUILD_MEMBERS,
-        Intents.FLAGS.GUILD_VOICE_STATES
+        Intents.FLAGS.GUILD_VOICE_STATES,
+        Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
+        Intents.FLAGS.GUILD_PRESENCES,
     ],
     disableMentions: 'everyone',
 });
@@ -24,8 +28,12 @@ client.login(process.env.token);
 
 client.on('ready', () => {
     console.log('Systems online and functioning properly')
+    new WOKCommands(client, {
+        commandsDir: path.join(__dirname, 'admin'),
+        testServers: client.config.app.serverId ,
+    })
 })
 
 
 
-process.on("uncaughtException", (error) => { console.log(error) })
+//process.on("uncaughtException", (error) => { console.log(error) })
