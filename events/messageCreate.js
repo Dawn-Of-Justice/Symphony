@@ -38,11 +38,7 @@ module.exports = ( client, message ) => {
 
     if (message.content.indexOf(prefix) == 0 ) {
         
-        setTimeout(() => {
-
-         message.delete();
-
-        }, client.config.app.dtime);
+        setTimeout(() => message.delete().catch(() => null), client.config.app.dtime);
     }
 
 };

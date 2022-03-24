@@ -3,6 +3,7 @@ const { Client , Intents } = require ('discord.js');
 const WOKCommands = require('wokcommands')
 const path = require('path')
 const dotenv = require ('dotenv');
+const mongoose = require('mongoose')
 dotenv.config();
 
 global.client = new Client({
@@ -26,11 +27,15 @@ require('./src/events');
 
 client.login(process.env.token);
 
-client.on('ready', () => {
+client.on('ready', async () => {
+ 
     console.log('Systems online and functioning properly')
     new WOKCommands(client, {
         commandsDir: path.join(__dirname, 'admin'),
+        featuresDir: path.join(__dirname, 'features'),
         testServers: client.config.app.serverId ,
+        botOwners: ['442504496979902464'] ,
+        mongoUri: process.env.MONGO_URI,
     })
 })
 
