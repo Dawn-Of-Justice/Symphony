@@ -1,6 +1,6 @@
 module.exports = (client) => {
 
-    const statusOptions = ['with terabytes of data','Minecraft','with fire','with your feelings :)','dead,there\'s a bear near']
+    const statusOptions = ['with terabytes of data','Minecraft','with fire','with your feelings :)','dead,there\'s a bear near','www.blazingcold.com']
     let counter = 0;
 
     const updateStatus = () => {
@@ -16,7 +16,7 @@ module.exports = (client) => {
         if (++counter >= statusOptions.length){
             counter = 0
         }
-        setTimeout(updateStatus, 1000 * 60 * 4)
+        setTimeout(updateStatus, 1000 * 60 * 240)
     }
     updateStatus()
 
