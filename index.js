@@ -41,4 +41,4 @@ client.on('ready', async () => {
 
 
 
-//process.on("uncaughtException", (error) => { console.log(error) })
+process.on("uncaughtException", (error) => { console.log(error) })
