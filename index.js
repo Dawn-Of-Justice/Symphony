@@ -3,7 +3,6 @@ const { Client , Intents } = require ('discord.js');
 const WOKCommands = require('wokcommands')
 const path = require('path')
 const dotenv = require ('dotenv');
-const mongoose = require('mongoose')
 dotenv.config();
 
 global.client = new Client({
