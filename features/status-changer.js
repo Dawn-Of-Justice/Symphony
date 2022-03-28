@@ -1,6 +1,7 @@
 module.exports = (client) => {
 
-    const statusOptions = ['with terabytes of data','Minecraft','with fire','with your feelings :)','dead,there\'s a bear near','www.blazingcold.com']
+    const statusOptions = ['with terabytes of data','Minecraft','with fire','with your feelings :)','dead,there\'s a bear near','www.blazingcold.com','with time travel','with server settings']
+    const rstatus = () => statusOptions[Math.floor(Math.random() * statusOptions.length)];
     let counter = 0;
 
     const updateStatus = () => {
@@ -8,7 +9,7 @@ module.exports = (client) => {
             status: 'online',
             activities: [
                 {
-                    name: statusOptions[counter]
+                    name: rstatus()
                 }
             ]
         })
