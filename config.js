@@ -3,8 +3,8 @@ module.exports = {
         px: '.',
         dtime: '8000',
         dvol: '65',
-       // serverId: '497428249882656769'
-        serverId: '809065434413531197'
+        serverId: '497428249882656769'
+        //serverId: '809065434413531197'
     },
 
     opt: {
