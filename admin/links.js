@@ -33,6 +33,12 @@ module.exports = {
                   .setLabel('Shop Setup')
                   .setStyle('LINK')
             )
+            .addComponents(
+                new MessageButton()
+                  .setURL('https://discord.com/channels/497428249882656769/801112790999236698/962348332829782117')
+                  .setLabel('Custom Skins')
+                  .setStyle('LINK')
+            )
 
         await msgInt.reply({
             content: '**Fast Travel :eyes:**',
