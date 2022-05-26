@@ -5,7 +5,7 @@ module.exports = {
     description: 'Fast travel',
     Permissions: ['ADMINISTRATOR'],
     slash: true,
-    testOnly: true,
+    testOnly: false,
 
     callback: async ({ interaction: msgInt }) => {
         const LinkRow = new MessageActionRow()

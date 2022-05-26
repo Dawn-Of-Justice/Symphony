@@ -9,7 +9,7 @@ module.exports =  {
     
 
     slash: 'both',
-    testOnly: true,
+    testOnly: false,
     guildOnly: true,
 
     callback: ({ message, interaction, args }) => {

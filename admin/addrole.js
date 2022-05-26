@@ -10,7 +10,7 @@ module.exports = {
     expectedArgsTypes: ['CHANNEL', 'STRING', 'ROLE'],
 
     slash: 'both',
-    testOnly: true,
+    testOnly: false,
     guildOnly: true,
 
     init: (client) => {
