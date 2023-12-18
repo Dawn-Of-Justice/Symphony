@@ -1,4 +1,4 @@
-# Symphony Discord Bot
+# Symphony Discord Bot (Old Bot, Won't work now)
 
 ## Overview
 
